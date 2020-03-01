@@ -1,0 +1,122 @@
+﻿# Scores categories
+Calculations=Calculs
+HeartFailure=Insuffisance cardiaque
+Rhythmology=Rythmologie
+
+
+# Amyloidosis probability score
+Amyloidosis=Amylose cardiaque
+Amyloidosis_Detail=Probabilité d'amylose cardiaque en cas d'hypertrophie ventriculaire
+
+
+# BMI & Ideal Weight
+BMI=IMC & Poids idéal
+BMI_Detail=Calcul de l'IMC et du poids idéal pour la taille
+BMI_TitleName=IMC & Poids idéal
+BMI_Source=Classification de l'IMC selon l'Organisation Mondiale de la Santé.
+BMI_URL=http://apps.who.int/bmi/index.jsp?introPage=intro_3.html
+BMI_Interpretation_SevereThinness=Maigreur extrême
+BMI_Interpretation_Thinness=Maigreur
+BMI_Interpretation_Obesity3=Obésité mordide (grade 3)
+BMI_Interpretation_Obesity2=Obésité sévère (grade 2)
+BMI_Interpretation_Obesity1=Obésité modérée (grade 1)
+BMI_Interpretation_Overweight=Surpoids
+BMI_Interpretation_Normal=IMC normal
+BMI_IdealWeightManFormulaName=Formule de Devine pour les hommes.
+BMI_IdealWeightManSource=Gentamicin therapy. Devine, BJ. Drug Intell Clin Pharm, 1974;8:650–5.
+BMI_IdealWeightManURL=https://scholar.google.com/scholar_lookup?hl=en&publication_year=1974&pages=650-5&author=BJ+Devine&title=Gentamicin+therapy
+BMI_IdealWeightWomanFormulaName=Formule de Robinson pour les femmes.
+BMI_IdealWeightWomanSource=Determination of ideal body weight for drug dosage calculations. Robinson JD, et al. Am J Hosp Pharmacology, 1983;40(6):1016-9.
+BMI_IdealWeightWomanURL=https://www.researchgate.net/deref/http%3A%2F%2Fwww.ingentaselect.com%2Frpsv%2Fcgi-bin%2Flinker%3Fext%3Da%26reqidx%3D0002-9289%281983%2940L.1016%5Baid%3D6802988%5D
+
+
+# BodySurfaceArea
+BodySurfaceArea=Surface corporelle
+BodySurfaceArea_Detail=Calcul de la surface corporelle selon la formule de Boyd
+
+
+# Canadian Syncope Risk Score
+CanadianSyncopeRisk=Canadian Syncope Risk
+CanadianSyncopeRisk_Detail=Risque d'évènement cardiovasculaire après syncope
+
+# ChadsVasc
+ChadsVasc=CHA2DS2-VASc
+ChadsVasc_Detail=Risque d'embolie artérielle systémique en fibrillation atriale
+
+
+# Clearance
+Clearance=Clairance de la créatinine
+Clearance_Detail=Evaluation de la fonction rénale
+
+
+# Constriction
+Constriction=Constriction / Restriction
+Constriction_Detail=Différenciation échographique entre constriction péricardique et cardiomyopathie restrictive
+
+
+# CorrectedQt
+CorrectedQt=QT corrigé
+CorrectedQt_Detail=QT corrigé à la fréquence cardiaque selon Bazett (QRS fins) ou Rautaharju (QRS larges)
+
+
+# DiastolicFunction
+DiastolicFunction=Fonction diastolique
+DiastolicFunction_Detail=Evaluation échographique de la fonction diastolique et des pressions de remplissages
+
+
+# Haemodynamics
+Haemodynamics=Hémodynamique
+Haemodynamics_Detail=Calculs usuels en cathétérisme et classification de l'hypertension pulmonaire
+
+
+# HasBled
+HasBled=HAS-BLED
+HasBled_Detail=Risque hémorragique sous traitement antithrombotique
+
+
+# HcmRiskScd
+HcmRiskScd=HCM Risk-SCD
+HcmRiskScd_Detail=Risque de mort subite dans la cardiomyopathie hypertrophique
+
+
+# Hemorrhages
+Hemorrhages=HEMORR2HAGES
+Hemorrhages_Detail=Risque hémorragique sous Warfarine chez le patient en fibrillation atriale
+
+
+# PH-HFpEF Group Score
+PhhfGroup=PH-HFpEF Group
+PhhfGroup_Detail=Classification de l'hypertension pulmonaire
+PhhfGroup_TitleName=Score PH-HFpEF Group
+PhhfGroup_Advert=Les stratégies de prise en charge proposées ici sont tirées du [calculateur en ligne sur le site du GICC](https://giccardio.fr/medecin/outils/calcul-de-scores/) (Groupe Insuffisance Cardiaque et Cardiomyopathies de la Société Française de Cardiologie) et n'ont pas fait l'objet d'une validation prospective.
+PhhfGroup_Description=Classification non-invasive des hypertensions pulmonaires avec FEVG préservée (> 50 %). Un score > 6 a une spécificité > 95% pour une hypertension pulmonaire post-capillaire du groupe 2 (insuffisance cardiaque gauche).
+PhhfGroup_Source=A Clinical and Echocardiographic Score to Identify Pulmonary Hypertension Due to HFpEF. Berthelot E, et al. Journal of Cardiac Failure, 2017;23(1):29-35.
+PhhfGroup_URL=http://dx.doi.org/10.1016/j.cardfail.2016.10.002
+PhhfGroup_Interpretation_Intermediate=Référer le patient à un centre de référence d'hypertension pulmonaire pour cathétérisme cardiaque droit.
+PhhfGroup_Interpretation_Postcapillary=Forte probabilité d'hypertension pulmonaire post-capillaire dans le cadre d'une insuffisance cardiaque : traiter le patient avec des diurétiques et réévaluer.
+PhhfGroup_Interpretation_Precapillary=Forte probabilité d'hypertension pulmonaire pré-capillaire : référer le patient à un centre de référence d'HTP pour cathétérisme cardiaque droit.
+
+
+# PulmonaryHypertensionProbability
+PulmonaryHypertensionProbability=Probabilité d'HTAP
+PulmonaryHypertensionProbability_Detail=Probabilité échographique d'hypertension pulmonaire
+
+
+# Qualify
+Qualify=QUALIFY
+Qualify_Detail=Titration médicamenteuse dans l'insuffisance cardiaque
+
+
+# UnitConversion
+UnitConversion=Conversions d'unités
+UnitConversion_Detail=Convertisseur d'unités usuelles en médecine
+
+
+# UreaExcretionFraction
+UreaExcretionFraction=Fraction d'excrétion urée
+UreaExcretionFraction_Detail=Aide à comprendre le mécanisme d'insuffisance rénale aiguë
+
+
+# VentricularTachycardia
+VentricularTachycardia=Ventricular Tachycardia
+VentricularTachycardia_Detail=Probabilité de TV devant une tachycardie à QRS larges

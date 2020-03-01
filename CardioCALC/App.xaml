@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+	xmlns:ui="clr-namespace:CardioCALC.UI.Mobile"
+	xmlns:toolkit="clr-namespace:CardioCALC.UI.Mobile"
+	mc:Ignorable="d"
+	x:Class="CardioCALC.App">
+
+	<Application.Resources>
+
+
+		<ResourceDictionary>
+			<toolkit:InvertBooleanConverter x:Key="invertBool" />
+			<toolkit:NullDoubleConverter x:Key="doubleConverter" />
+			<toolkit:MarkdownConverter x:Key="markdownConverter" />
+			<toolkit:FavoritesCountToBoolean x:Key="FavoritesCountToBoolean" />
+		</ResourceDictionary>
+		<!-- Couleur bleue plus claire : 03a9f4 -->
+		<!--
+		Thème du 10 août (version bleue pas mal)
+		
+		Couleur bleue plus claire : 03a9f4
+		<Color x:Key="Accent">#eaeaea</Color>
+		<Color x:Key="AccentLight">#ff5a80</Color>
+		<Color x:Key="MainColor">#2196f3</Color> MainColor : bouton 1ère version CardioCALC #387ef5
+		<Color x:Key="MainColorDark">#0097a7</Color>
+		<Color x:Key="MainColorLight">#62efff</Color>
+		<Color x:Key="SecondaryColor">#4dd0e1</Color>
+		<Color x:Key="ButtonTextColor">White</Color>
+		<Color x:Key="NavBarBackgroundColor">#f8f8fa</Color>
+		<Color x:Key="NavBarTextColor">#333333</Color>
+		<Color x:Key="PageBackgroundColor">#efeff7</Color>
+		<Color x:Key="TabBarBackgroundColor">#f8f8fa</Color>
+		<Color x:Key="LabelTextColor">#555555</Color>
+		<Color x:Key="HyperlinkTextColor">#2196f3</Color>
+		<Color x:Key="SwitchOnButtonColor">#32db64</Color>
+		<Color x:Key="SwitchOnBackgroundColor">#9eeeb6</Color>
+		<Color x:Key="SwitchOffButtonColor">#fefefe</Color>
+		<Color x:Key="SwitchOffBackgroundColor">#aaaaaa</Color>
+		-->
+
+		
+		
+		<!--
+		/
+		/		COLOR DEFINITIONS
+		/
+		-->
+		
+		<!-- Main color scheme -->
+		<Color x:Key="Accent">#f80054</Color>
+		<Color x:Key="AccentLight">#ff5a80</Color>
+		<Color x:Key="MainColor">#00bcd4</Color>
+		<Color x:Key="MainColorDark">#00b1c7</Color>
+		<Color x:Key="MainColorLight">#48cfd7</Color>
+		<Color x:Key="SecondaryColor">#4dd0e1</Color>
+		
+		<!-- Containers (frame, page, navbar, tabbar) -->
+		<Color x:Key="NavBarBackgroundColor">#f8f8fa</Color>
+		<Color x:Key="NavBarTextColor">#333333</Color>
+		<Color x:Key="PageBackgroundColor">#efeff7</Color>
+		<Color x:Key="TabBarBackgroundColor">#f8f8fa</Color>
+		<Color x:Key="SeparatorColor">#ebebf6</Color>
+		
+		<!-- Controls -->
+		<Color x:Key="ButtonTextColor">White</Color>
+		<Color x:Key="SwitchOnButtonColor">#32db64</Color>
+		<Color x:Key="SwitchOnBackgroundColor">#9eeeb6</Color>
+		<Color x:Key="SwitchOffButtonColor">#fefefe</Color>
+		<Color x:Key="SwitchOffBackgroundColor">#aaaaaa</Color>
+
+		<!-- Text -->
+		<Color x:Key="TextColor">#444444</Color>
+		<Color x:Key="LightTextColor">#666666</Color>
+		<Color x:Key="HyperlinkTextColor">#00bcd4</Color>
+
+		
+		
+		
+		<!--
+		/
+		/		STYLE DEFINITION
+		/
+		-->
+		
+		<!-- Page and subtypes -->
+		<Style TargetType="NavigationPage">
+			<Setter Property="BackgroundColor" Value="{StaticResource PageBackgroundColor}" />
+			<Setter Property="BarBackgroundColor" Value="{StaticResource NavBarBackgroundColor}" />
+			<Setter Property="BarTextColor" Value="{StaticResource NavBarTextColor}" />
+		</Style>
+		
+		<Style TargetType="TabbedPage">
+			<Setter Property="BarBackgroundColor" Value="{StaticResource NavBarBackgroundColor}" />
+			<Setter Property="BarTextColor" Value="{StaticResource NavBarTextColor}" />
+			<Setter Property="SelectedTabColor" Value="{StaticResource MainColor}"/>
+		</Style>
+
+		
+		<!-- Layouts and frames -->
+		<Style x:Key="MainStackLayout" TargetType="StackLayout">
+			<Setter Property="Padding" Value="0, 5" />
+			<Setter Property="Spacing" Value="4" />
+		</Style>
+		
+		<Style TargetType="Frame">
+			<Setter Property="CornerRadius" Value="0" />
+			<Setter Property="HasShadow" Value="False" />
+		</Style>
+		
+		<Style x:Key="OuterFrame" TargetType="Frame">
+			<Setter Property="Padding" Value="0, 1" />
+			<Setter Property="BackgroundColor" Value="{StaticResource SeparatorColor}" />
+		</Style>
+		
+		<Style x:Key="InnerFrame" TargetType="Frame">
+			<Setter Property="Margin" Value="0" />
+		</Style>
+
+		<Style x:Key="Separator" TargetType="BoxView">
+			<Setter Property="Color" Value="{StaticResource SeparatorColor}" />
+			<Setter Property="HeightRequest" Value="1" />
+			<Setter Property="Margin" Value="8, 16" />
+			<Setter Property="HorizontalOptions" Value="FillAndExpand" />
+		</Style>
+		
+		<Style x:Key="DescriptionFrameLabel" TargetType="Label">
+			<Setter Property="FontSize" Value="14" /><!--Small-->
+			<Setter Property="LineHeight" Value="1.1" />
+		</Style>
+		
+		<Style x:Key="DescriptionFrameLabelTitle" TargetType="Label">
+			<Setter Property="FontAttributes" Value="Bold" />
+			<Setter Property="FontSize" Value="17" /><!--Subtitle-->
+			<Setter Property="TextColor" Value="{StaticResource MainColorDark}" />
+		</Style>
+		
+		<Style x:Key="DescriptionFrameBoxView" TargetType="BoxView">
+			<Setter Property="Color" Value="{StaticResource Accent}" />
+			<Setter Property="HeightRequest" Value="1" />
+			<Setter Property="HorizontalOptions" Value="FillAndExpand" />
+		</Style>
+		
+		<Style x:Key="AdvertFrameLabel" TargetType="Label" BasedOn="{StaticResource DescriptionFrameLabel}" />
+		<Style x:Key="AdvertFrameLabelTitle" TargetType="Label" BasedOn="{StaticResource DescriptionFrameLabelTitle}" />
+		<Style x:Key="AdvertFrameBoxView" TargetType="BoxView" BasedOn="{StaticResource DescriptionFrameBoxView}" />
+
+		
+		<!-- Text -->
+		<Style TargetType="Label">
+			<Setter Property="VerticalOptions" Value="CenterAndExpand" />
+			<Setter Property="TextColor" Value="{StaticResource TextColor}" />
+			<Setter Property="FontSize" Value="15" /><!--Body-->
+		</Style>
+
+		<Style x:Key="SourceLabel" TargetType="Label">
+			<Setter Property="FontSize" Value="10" /><!--Micro-->
+		</Style>
+
+		<Style x:Key="SourceLabelHyperlink" TargetType="Label">
+			<Setter Property="TextColor" Value="{StaticResource HyperlinkTextColor}" />
+			<Setter Property="TextDecorations" Value="Underline" />
+		</Style>
+		
+		
+		<!-- Controls -->
+		<Style TargetType="Entry">
+			<Setter Property="Keyboard" Value="Numeric" />
+			<Setter Property="VerticalOptions" Value="CenterAndExpand" />
+			<Setter Property="FontSize" Value="15" /><!--Body-->
+		</Style>
+
+		<Style x:Key="CalculateButtonFrame" TargetType="Frame">
+			<Setter Property="HasShadow" Value="True" />
+			<Setter Property="Padding" Value="0" />
+			<Setter Property="CornerRadius" Value="6" /><!--20-->
+		</Style>
+		
+		<Style x:Key="CalculateButton" TargetType="Button">
+			<Setter Property="BackgroundColor" Value="{StaticResource MainColor}" />
+			<Setter Property="TextColor" Value="White" />
+			<Setter Property="HeightRequest" Value="40" />
+			<Setter Property="CornerRadius" Value="6" />
+			<Setter Property="android:Button.UseDefaultShadow" Value="False" />
+			<Setter Property="android:Button.UseDefaultPadding" Value="False" />
+		</Style>
+
+		<Style TargetType="Switch">
+			<Setter Property="OnColor" Value="{StaticResource SwitchOnBackgroundColor}" />
+		</Style>
+
+		<Style TargetType="ui:CustomSwitch">
+			<Setter Property="SwitchOnColor" Value="{StaticResource SwitchOnButtonColor}" />
+			<Setter Property="SwitchOnThumbColor" Value="{StaticResource SwitchOnButtonColor}" />
+			<Setter Property="SwitchOffColor" Value="{StaticResource SwitchOffBackgroundColor}" />
+			<Setter Property="SwitchOffThumbColor" Value="{StaticResource SwitchOffButtonColor}" />
+			<Setter Property="MinimumWidthRequest" Value="150" />
+		</Style>
+
+	</Application.Resources>
+	
+</Application>

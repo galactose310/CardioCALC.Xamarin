@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ui:ViewPageBase
+	xmlns:ui="clr-namespace:CardioCALC.UI.Mobile"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="CardioCALC.PhhfGroupPage"
+	Title="{Binding ScoreResources[PhhfGroup_TitleName]}">
+
+	<ScrollView>
+		<StackLayout Style="{StaticResource MainStackLayout}">
+
+			<Frame Style="{StaticResource OuterFrame}">
+				<Frame Style="{StaticResource InnerFrame}">
+					<StackLayout>
+						
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="2*" />
+								<ColumnDefinition Width="1*"/>
+							</Grid.ColumnDefinitions>
+
+							<Label Text="{Binding Resources[Diabetes]}" Grid.Row="0" />
+							<ui:CustomSwitch IsToggled="{Binding Diabetes}" Grid.Row="0" Grid.Column="1" />
+
+							<Label Text="{Binding Resources[AtrialFibrillation]}" Grid.Row="1" />
+							<ui:CustomSwitch IsToggled="{Binding AtrialFibrillation}" Grid.Row="1" Grid.Column="1" />
+
+							<Label Text="{Binding Resources[LeftAtriumArea]}" Grid.Row="2" />
+							<Entry Text="{Binding LeftAtriumArea, Converter={StaticResource doubleConverter}, Mode=OneWayToSource}"
+							   Placeholder="(cm²)" Grid.Row="2" Grid.Column="1" Completed="OnEntryCompleted" />
+
+							<Label Text="{Binding Resources[RightVentricleArea]}" Grid.Row="3" />
+							<Entry Text="{Binding RightVentricleArea, Converter={StaticResource doubleConverter}, Mode=OneWayToSource}"
+							   Placeholder="(cm²)" Grid.Row="3" Grid.Column="1" Completed="OnEntryCompleted" />
+
+							<Label Text="{Binding Resources[IsLVMassKnown]}" Grid.Row="4" />
+							<ui:CustomSwitch IsToggled="{Binding LVMassIsKnown}" Grid.Row="4" Grid.Column="1"/>
+						</Grid>
+
+						<Grid IsVisible="{Binding LVMassIsKnown}">
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="2*" />
+								<ColumnDefinition Width="1*"/>
+							</Grid.ColumnDefinitions>
+							<Label Text="{Binding Resources[LeftVentricleMass]}" Grid.Row="0" />
+							<Entry Text="{Binding LeftVentricleMass, Converter={StaticResource doubleConverter}, Mode=OneWayToSource}"
+							   Placeholder="(g/m²)" Grid.Row="0" Grid.Column="1" Completed="OnEntryCompleted" />
+						</Grid>
+
+						<Grid IsVisible="{Binding LVMassIsKnown, Converter={StaticResource invertBool}}">
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="2*" />
+								<ColumnDefinition Width="1*"/>
+							</Grid.ColumnDefinitions>
+
+							<Label Text="{Binding Resources[LeftVentricleSeptumDiam]}" Grid.Row="0" />
+							<Entry Text="{Binding LeftVentricleSeptumDiam, Converter={StaticResource doubleConverter}, Mode=OneWayToSource}"
+							   Placeholder="(mm)" Grid.Row="0" Grid.Column="1" Completed="OnEntryCompleted" />
+
+							<Label Text="{Binding Resources[LeftVentricleDiam]}" Grid.Row="1" />
+							<Entry Text="{Binding LeftVentricleDiam, Converter={StaticResource doubleConverter}, Mode=OneWayToSource}"
+							   Placeholder="(mm)" Grid.Row="1" Grid.Column="1" Completed="OnEntryCompleted" />
+
+							<Label Text="{Binding Resources[LeftVentricleWallDiam]}" Grid.Row="2" />
+							<Entry Text="{Binding LeftVentricleWallDiam, Converter={StaticResource doubleConverter}, Mode=OneWayToSource}"
+							   Placeholder="(mm)" Grid.Row="2" Grid.Column="1" Completed="OnEntryCompleted" />
+
+							<Label Text="{Binding Resources[Height]}" Grid.Row="3" />
+							<Entry Text="{Binding Height, Converter={StaticResource doubleConverter}, Mode=OneWayToSource}"
+							   Placeholder="(cm)" Grid.Row="3" Grid.Column="1" Completed="OnEntryCompleted" />
+
+							<Label Text="{Binding Resources[Weight]}" Grid.Row="4" />
+							<Entry Text="{Binding Weight, Converter={StaticResource doubleConverter}, Mode=OneWayToSource}"
+							   Placeholder="(kg)" Grid.Row="4" Grid.Column="1" Completed="OnEntryCompleted" />
+						</Grid>
+
+						<BoxView Style="{StaticResource Separator}" />
+
+						<Frame Style="{StaticResource CalculateButtonFrame}">
+							<Button Style="{StaticResource CalculateButton}" Text="{Binding Resources[Calculate]}" Clicked="OnCalculateClicked" />
+						</Frame>
+
+					</StackLayout>
+				</Frame>
+			</Frame>
+
+			<Frame Style="{StaticResource OuterFrame}">
+				<Frame Style="{StaticResource InnerFrame}">
+					<StackLayout>
+						<Label Text="{Binding Resources[Description]}" Style="{StaticResource DescriptionFrameLabelTitle}" />
+						<BoxView Style="{StaticResource DescriptionFrameBoxView}" />
+						<Label FormattedText="{Binding ScoreResources[PhhfGroup_Description], Converter={StaticResource markdownConverter}}" Style="{StaticResource DescriptionFrameLabel}" />
+					</StackLayout>
+				</Frame>
+			</Frame>
+
+
+			<Frame Style="{StaticResource OuterFrame}">
+				<Frame Style="{StaticResource InnerFrame}">
+					<StackLayout>
+						<Label Text="{Binding Resources[Advert]}" Style="{StaticResource AdvertFrameLabelTitle}" />
+						<BoxView Style="{StaticResource AdvertFrameBoxView}" />
+						<Label FormattedText="{Binding ScoreResources[PhhfGroup_Advert], Converter={StaticResource markdownConverter}}" Style="{StaticResource AdvertFrameLabel}" />
+					</StackLayout>
+				</Frame>
+			</Frame>
+
+			<Frame Style="{StaticResource OuterFrame}">
+				<Frame Style="{StaticResource InnerFrame}">
+					<StackLayout>
+						<Label Style="{StaticResource SourceLabel}">
+							<Label.FormattedText>
+								<FormattedString>
+									<Span Text="{Binding Resources[Source]}" />
+									<Span Text=" " />
+									<Span Text="{Binding ScoreResources[PhhfGroup_Source]}"
+									  Style="{StaticResource SourceLabelHyperlink}">
+										<Span.GestureRecognizers>
+											<TapGestureRecognizer Command="{Binding OpenNavigatorToURL}"
+													CommandParameter="{Binding ScoreResources[PhhfGroup_URL]}"  />
+										</Span.GestureRecognizers>
+									</Span>
+								</FormattedString>
+							</Label.FormattedText>
+						</Label>
+					</StackLayout>
+				</Frame>
+			</Frame>
+
+		</StackLayout>
+	</ScrollView>
+
+</ui:ViewPageBase>

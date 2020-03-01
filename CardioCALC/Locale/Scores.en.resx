@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Calculations" xml:space="preserve">
+    <value>Calculations</value>
+  </data>
+  <data name="HeartFailure" xml:space="preserve">
+    <value>Heart failure</value>
+  </data>
+  <data name="Rhythmology" xml:space="preserve">
+    <value>Rhythmology</value>
+  </data>
+  <data name="Amyloidosis" xml:space="preserve">
+    <value>Cardiac amyloidosis</value>
+  </data>
+  <data name="Amyloidosis_Detail" xml:space="preserve">
+    <value>Probability of cardiac amyloidosis in case of myocardial hypertrophy</value>
+  </data>
+  <data name="BMI" xml:space="preserve">
+    <value>BMI &amp; Ideal Weight</value>
+  </data>
+  <data name="BMI_Detail" xml:space="preserve">
+    <value>Calculates BMI and ideal weight according to the height</value>
+  </data>
+  <data name="BMI_TitleName" xml:space="preserve">
+    <value>BMI &amp; Ideal Weight</value>
+  </data>
+  <data name="BMI_Source" xml:space="preserve">
+    <value>Classification de l'IMC selon l'Organisation Mondiale de la Santé.</value>
+  </data>
+  <data name="BMI_URL" xml:space="preserve">
+    <value>http://apps.who.int/bmi/index.jsp?introPage=intro_3.html</value>
+  </data>
+  <data name="BMI_Interpretation_SevereThinness" xml:space="preserve">
+    <value>Maigreur extrême</value>
+  </data>
+  <data name="BMI_Interpretation_Thinness" xml:space="preserve">
+    <value>Maigreur</value>
+  </data>
+  <data name="BMI_Interpretation_Obesity3" xml:space="preserve">
+    <value>Obésité mordide (grade 3)</value>
+  </data>
+  <data name="BMI_Interpretation_Obesity2" xml:space="preserve">
+    <value>Obésité sévère (grade 2)</value>
+  </data>
+  <data name="BMI_Interpretation_Obesity1" xml:space="preserve">
+    <value>Obésité modérée (grade 1)</value>
+  </data>
+  <data name="BMI_Interpretation_Overweight" xml:space="preserve">
+    <value>Surpoids</value>
+  </data>
+  <data name="BMI_Interpretation_Normal" xml:space="preserve">
+    <value>IMC normal</value>
+  </data>
+  <data name="BMI_IdealWeightManFormulaName" xml:space="preserve">
+    <value>Formule de Devine pour les hommes.</value>
+  </data>
+  <data name="BMI_IdealWeightManSource" xml:space="preserve">
+    <value>Gentamicin therapy. Devine, BJ. Drug Intell Clin Pharm, 1974;8:650–5.</value>
+  </data>
+  <data name="BMI_IdealWeightManURL" xml:space="preserve">
+    <value>https://scholar.google.com/scholar_lookup?hl=en&amp;publication_year=1974&amp;pages=650-5&amp;author=BJ+Devine&amp;title=Gentamicin+therapy</value>
+  </data>
+  <data name="BMI_IdealWeightWomanFormulaName" xml:space="preserve">
+    <value>Formule de Robinson pour les femmes.</value>
+  </data>
+  <data name="BMI_IdealWeightWomanSource" xml:space="preserve">
+    <value>Determination of ideal body weight for drug dosage calculations. Robinson JD, et al. Am J Hosp Pharmacology, 1983;40(6):1016-9.</value>
+  </data>
+  <data name="BMI_IdealWeightWomanURL" xml:space="preserve">
+    <value>https://www.researchgate.net/deref/http%3A%2F%2Fwww.ingentaselect.com%2Frpsv%2Fcgi-bin%2Flinker%3Fext%3Da%26reqidx%3D0002-9289%281983%2940L.1016%5Baid%3D6802988%5D</value>
+  </data>
+  <data name="CanadianSyncopeRisk" xml:space="preserve">
+    <value>Canadian Syncope Risk</value>
+  </data>
+  <data name="CanadianSyncopeRisk_Detail" xml:space="preserve">
+    <value>Risk of cardiovascular event after syncope</value>
+  </data>
+  <data name="Clearance" xml:space="preserve">
+    <value>Creatinine clearance</value>
+  </data>
+  <data name="Clearance_Detail" xml:space="preserve">
+    <value>Evaluation of renal function</value>
+  </data>
+  <data name="PhhfGroup" xml:space="preserve">
+    <value>PH-HFpEF Group</value>
+  </data>
+  <data name="PhhfGroup_Detail" xml:space="preserve">
+    <value>Pulmonary hypertension classification</value>
+  </data>
+  <data name="PhhfGroup_TitleName" xml:space="preserve">
+    <value>Score PH-HFpEF Group</value>
+  </data>
+  <data name="PhhfGroup_Advert" xml:space="preserve">
+    <value>Les stratégies de prise en charge proposées ici sont tirées du [calculateur en ligne sur le site du GICC](https://giccardio.fr/medecin/outils/calcul-de-scores/) (Groupe Insuffisance Cardiaque et Cardiomyopathies de la Société Française de Cardiologie) et n'ont pas fait l'objet d'une validation prospective.</value>
+  </data>
+  <data name="PhhfGroup_Description" xml:space="preserve">
+    <value>Classification non-invasive des hypertensions pulmonaires avec FEVG préservée (&gt; 50 %). Un score &gt; 6 a une spécificité &gt; 95% pour une hypertension pulmonaire post-capillaire du groupe 2 (insuffisance cardiaque gauche).</value>
+  </data>
+  <data name="PhhfGroup_Source" xml:space="preserve">
+    <value>A Clinical and Echocardiographic Score to Identify Pulmonary Hypertension Due to HFpEF. Berthelot E, et al. Journal of Cardiac Failure, 2017;23(1):29-35.</value>
+  </data>
+  <data name="PhhfGroup_URL" xml:space="preserve">
+    <value>http://dx.doi.org/10.1016/j.cardfail.2016.10.002</value>
+  </data>
+  <data name="PhhfGroup_Interpretation_Intermediate" xml:space="preserve">
+    <value>Référer le patient à un centre de référence d'hypertension pulmonaire pour cathétérisme cardiaque droit.</value>
+  </data>
+  <data name="PhhfGroup_Interpretation_Postcapillary" xml:space="preserve">
+    <value>Forte probabilité d'hypertension pulmonaire post-capillaire dans le cadre d'une insuffisance cardiaque : traiter le patient avec des diurétiques et réévaluer.</value>
+  </data>
+  <data name="PhhfGroup_Interpretation_Precapillary" xml:space="preserve">
+    <value>Forte probabilité d'hypertension pulmonaire pré-capillaire : référer le patient à un centre de référence d'HTP pour cathétérisme cardiaque droit.</value>
+  </data>
+</root>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ui:ViewPageBase
+	xmlns:ui="clr-namespace:CardioCALC.UI.Mobile"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="CardioCALC.FavoritesListPage"
+	x:Name="ThisPage"
+	Title="CardioCALC">
+	
+	<StackLayout Style="{StaticResource MainStackLayout}">
+
+		<Label Text="{Binding Resources[NoFavoriteFound]}" Margin="15, 10" HorizontalTextAlignment="Center"
+			   IsVisible="{Binding FavoriteScores.Count, Converter={StaticResource FavoritesCountToBoolean}}"/>
+		
+		<ListView ItemsSource="{Binding FavoriteScores}" RowHeight="70" VerticalOptions="FillAndExpand" VerticalScrollBarVisibility="Never">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<StackLayout Orientation="Horizontal" Padding="15, 0" BackgroundColor="White">
+							<!-- 1st part on left stacklayout for 2 lines : text and detail -->
+							<StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="StartAndExpand">
+								<Label Text="{Binding DisplayName}" FontSize="17" />
+								<Label Text="{Binding Detail}" FontSize="13" Opacity="0.6" LineBreakMode="WordWrap" />
+							</StackLayout>
+							<!-- 2nd part on right button/image to manage favorites -->
+							<StackLayout VerticalOptions="FillAndExpand" WidthRequest="40">
+								<StackLayout.GestureRecognizers>
+									<TapGestureRecognizer Command="{Binding Source={x:Reference ThisPage}, Path=ToogleFavorites}"
+														CommandParameter="{Binding .}" />
+								</StackLayout.GestureRecognizers>
+								<Image Source="{OnPlatform Android=round_star_24}" VerticalOptions="CenterAndExpand"
+									   IsVisible="{Binding IsFavorite}" />
+								<Image Source="{OnPlatform Android=round_star_border_24}" VerticalOptions="CenterAndExpand"
+									   IsVisible="{Binding IsFavorite, Converter={StaticResource invertBool}}" />
+							</StackLayout>
+						</StackLayout>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+
+	</StackLayout>
+
+</ui:ViewPageBase>

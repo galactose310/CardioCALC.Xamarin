@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<categories>
+	
+	<category name="Rhythmology">
+		<score name="CanadianSyncopeRisk" />
+		<score name="ChadsVasc" />
+		<score name="HasBled" />
+		<score name="HcmRiskScd" />
+		<score name="Hemorrhages" />
+		<score name="CorrectedQt" />
+		<score name="VentricularTachycardia" />
+	</category>
+	
+	<category name="HeartFailure">
+		<score name="Amyloidosis" />
+		<score name="Constriction" />
+		<score name="DiastolicFunction" />
+		<score name="Haemodynamics" />
+		<score name="PhhfGroup" />
+		<score name="PulmonaryHypertensionProbability" />
+		<score name="Qualify" />
+	</category>
+	
+	<category name="Calculations">
+		<score name="BMI" />
+		<score name="BodySurfaceArea" />
+		<score name="Clearance" />
+		<score name="UnitConversion" />
+		<score name="UreaExcretionFraction" />
+	</category>
+	
+</categories>

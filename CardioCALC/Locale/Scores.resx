@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Calculations" xml:space="preserve">
+    <value>Calculs</value>
+  </data>
+  <data name="HeartFailure" xml:space="preserve">
+    <value>Insuffisance cardiaque</value>
+  </data>
+  <data name="Rhythmology" xml:space="preserve">
+    <value>Rythmologie</value>
+  </data>
+  <data name="Amyloidosis" xml:space="preserve">
+    <value>Amylose cardiaque</value>
+  </data>
+  <data name="Amyloidosis_Detail" xml:space="preserve">
+    <value>Probabilité d'amylose cardiaque en cas d'hypertrophie ventriculaire</value>
+  </data>
+  <data name="BMI" xml:space="preserve">
+    <value>IMC &amp; Poids idéal</value>
+  </data>
+  <data name="BMI_Detail" xml:space="preserve">
+    <value>Calcul de l'IMC et du poids idéal pour la taille</value>
+  </data>
+  <data name="BMI_TitleName" xml:space="preserve">
+    <value>IMC &amp; Poids idéal</value>
+  </data>
+  <data name="BMI_Source" xml:space="preserve">
+    <value>Classification de l'IMC selon l'Organisation Mondiale de la Santé.</value>
+  </data>
+  <data name="BMI_URL" xml:space="preserve">
+    <value>http://apps.who.int/bmi/index.jsp?introPage=intro_3.html</value>
+  </data>
+  <data name="BMI_Interpretation_SevereThinness" xml:space="preserve">
+    <value>Maigreur extrême</value>
+  </data>
+  <data name="BMI_Interpretation_Thinness" xml:space="preserve">
+    <value>Maigreur</value>
+  </data>
+  <data name="BMI_Interpretation_Obesity3" xml:space="preserve">
+    <value>Obésité mordide (grade 3)</value>
+  </data>
+  <data name="BMI_Interpretation_Obesity2" xml:space="preserve">
+    <value>Obésité sévère (grade 2)</value>
+  </data>
+  <data name="BMI_Interpretation_Obesity1" xml:space="preserve">
+    <value>Obésité modérée (grade 1)</value>
+  </data>
+  <data name="BMI_Interpretation_Overweight" xml:space="preserve">
+    <value>Surpoids</value>
+  </data>
+  <data name="BMI_Interpretation_Normal" xml:space="preserve">
+    <value>IMC normal</value>
+  </data>
+  <data name="BMI_IdealWeightManFormulaName" xml:space="preserve">
+    <value>Formule de Devine pour les hommes.</value>
+  </data>
+  <data name="BMI_IdealWeightManSource" xml:space="preserve">
+    <value>Gentamicin therapy. Devine, BJ. Drug Intell Clin Pharm, 1974;8:650–5.</value>
+  </data>
+  <data name="BMI_IdealWeightManURL" xml:space="preserve">
+    <value>https://scholar.google.com/scholar_lookup?hl=en&amp;publication_year=1974&amp;pages=650-5&amp;author=BJ+Devine&amp;title=Gentamicin+therapy</value>
+  </data>
+  <data name="BMI_IdealWeightWomanFormulaName" xml:space="preserve">
+    <value>Formule de Robinson pour les femmes.</value>
+  </data>
+  <data name="BMI_IdealWeightWomanSource" xml:space="preserve">
+    <value>Determination of ideal body weight for drug dosage calculations. Robinson JD, et al. Am J Hosp Pharmacology, 1983;40(6):1016-9.</value>
+  </data>
+  <data name="BMI_IdealWeightWomanURL" xml:space="preserve">
+    <value>https://www.researchgate.net/deref/http%3A%2F%2Fwww.ingentaselect.com%2Frpsv%2Fcgi-bin%2Flinker%3Fext%3Da%26reqidx%3D0002-9289%281983%2940L.1016%5Baid%3D6802988%5D</value>
+  </data>
+  <data name="BodySurfaceArea" xml:space="preserve">
+    <value>Surface corporelle</value>
+  </data>
+  <data name="BodySurfaceArea_Detail" xml:space="preserve">
+    <value>Calcul de la surface corporelle selon la formule de Boyd</value>
+  </data>
+  <data name="CanadianSyncopeRisk" xml:space="preserve">
+    <value>Canadian Syncope Risk</value>
+  </data>
+  <data name="CanadianSyncopeRisk_Detail" xml:space="preserve">
+    <value>Risque d'évènement cardiovasculaire après syncope</value>
+  </data>
+  <data name="ChadsVasc" xml:space="preserve">
+    <value>CHA2DS2-VASc</value>
+  </data>
+  <data name="ChadsVasc_Detail" xml:space="preserve">
+    <value>Risque d'embolie artérielle systémique en fibrillation atriale</value>
+  </data>
+  <data name="Clearance" xml:space="preserve">
+    <value>Clairance de la créatinine</value>
+  </data>
+  <data name="Clearance_Detail" xml:space="preserve">
+    <value>Evaluation de la fonction rénale</value>
+  </data>
+  <data name="Constriction" xml:space="preserve">
+    <value>Constriction / Restriction</value>
+  </data>
+  <data name="Constriction_Detail" xml:space="preserve">
+    <value>Différenciation échographique entre constriction péricardique et cardiomyopathie restrictive</value>
+  </data>
+  <data name="CorrectedQt" xml:space="preserve">
+    <value>QT corrigé</value>
+  </data>
+  <data name="CorrectedQt_Detail" xml:space="preserve">
+    <value>QT corrigé à la fréquence cardiaque selon Bazett (QRS fins) ou Rautaharju (QRS larges)</value>
+  </data>
+  <data name="DiastolicFunction" xml:space="preserve">
+    <value>Fonction diastolique</value>
+  </data>
+  <data name="DiastolicFunction_Detail" xml:space="preserve">
+    <value>Evaluation échographique de la fonction diastolique et des pressions de remplissages</value>
+  </data>
+  <data name="Haemodynamics" xml:space="preserve">
+    <value>Hémodynamique</value>
+  </data>
+  <data name="Haemodynamics_Detail" xml:space="preserve">
+    <value>Calculs usuels en cathétérisme et classification de l'hypertension pulmonaire</value>
+  </data>
+  <data name="HasBled" xml:space="preserve">
+    <value>HAS-BLED</value>
+  </data>
+  <data name="HasBled_Detail" xml:space="preserve">
+    <value>Risque hémorragique sous traitement antithrombotique</value>
+  </data>
+  <data name="HcmRiskScd" xml:space="preserve">
+    <value>HCM Risk-SCD</value>
+  </data>
+  <data name="HcmRiskScd_Detail" xml:space="preserve">
+    <value>Risque de mort subite dans la cardiomyopathie hypertrophique</value>
+  </data>
+  <data name="Hemorrhages" xml:space="preserve">
+    <value>HEMORR2HAGES</value>
+  </data>
+  <data name="Hemorrhages_Detail" xml:space="preserve">
+    <value>Risque hémorragique sous Warfarine chez le patient en fibrillation atriale</value>
+  </data>
+  <data name="PhhfGroup" xml:space="preserve">
+    <value>PH-HFpEF Group</value>
+  </data>
+  <data name="PhhfGroup_Detail" xml:space="preserve">
+    <value>Classification de l'hypertension pulmonaire</value>
+  </data>
+  <data name="PhhfGroup_TitleName" xml:space="preserve">
+    <value>Score PH-HFpEF Group</value>
+  </data>
+  <data name="PhhfGroup_Advert" xml:space="preserve">
+    <value>Les stratégies de prise en charge proposées ici sont tirées du [calculateur en ligne sur le site du GICC](https://giccardio.fr/medecin/outils/calcul-de-scores/) (Groupe Insuffisance Cardiaque et Cardiomyopathies de la Société Française de Cardiologie) et n'ont pas fait l'objet d'une validation prospective.</value>
+  </data>
+  <data name="PhhfGroup_Description" xml:space="preserve">
+    <value>Classification non-invasive des hypertensions pulmonaires avec FEVG préservée (&gt; 50 %). Un score &gt; 6 a une spécificité &gt; 95% pour une hypertension pulmonaire post-capillaire du groupe 2 (insuffisance cardiaque gauche).</value>
+  </data>
+  <data name="PhhfGroup_Source" xml:space="preserve">
+    <value>A Clinical and Echocardiographic Score to Identify Pulmonary Hypertension Due to HFpEF. Berthelot E, et al. Journal of Cardiac Failure, 2017;23(1):29-35.</value>
+  </data>
+  <data name="PhhfGroup_URL" xml:space="preserve">
+    <value>http://dx.doi.org/10.1016/j.cardfail.2016.10.002</value>
+  </data>
+  <data name="PhhfGroup_Interpretation_Intermediate" xml:space="preserve">
+    <value>Référer le patient à un centre de référence d'hypertension pulmonaire pour cathétérisme cardiaque droit.</value>
+  </data>
+  <data name="PhhfGroup_Interpretation_Postcapillary" xml:space="preserve">
+    <value>Forte probabilité d'hypertension pulmonaire post-capillaire dans le cadre d'une insuffisance cardiaque : traiter le patient avec des diurétiques et réévaluer.</value>
+  </data>
+  <data name="PhhfGroup_Interpretation_Precapillary" xml:space="preserve">
+    <value>Forte probabilité d'hypertension pulmonaire pré-capillaire : référer le patient à un centre de référence d'HTP pour cathétérisme cardiaque droit.</value>
+  </data>
+  <data name="PulmonaryHypertensionProbability" xml:space="preserve">
+    <value>Probabilité d'HTAP</value>
+  </data>
+  <data name="PulmonaryHypertensionProbability_Detail" xml:space="preserve">
+    <value>Probabilité échographique d'hypertension pulmonaire</value>
+  </data>
+  <data name="Qualify" xml:space="preserve">
+    <value>QUALIFY</value>
+  </data>
+  <data name="Qualify_Detail" xml:space="preserve">
+    <value>Titration médicamenteuse dans l'insuffisance cardiaque</value>
+  </data>
+  <data name="UnitConversion" xml:space="preserve">
+    <value>Conversions d'unités</value>
+  </data>
+  <data name="UnitConversion_Detail" xml:space="preserve">
+    <value>Convertisseur d'unités usuelles en médecine</value>
+  </data>
+  <data name="UreaExcretionFraction" xml:space="preserve">
+    <value>Fraction d'excrétion urée</value>
+  </data>
+  <data name="UreaExcretionFraction_Detail" xml:space="preserve">
+    <value>Aide à comprendre le mécanisme d'insuffisance rénale aiguë</value>
+  </data>
+  <data name="VentricularTachycardia" xml:space="preserve">
+    <value>Ventricular Tachycardia</value>
+  </data>
+  <data name="VentricularTachycardia_Detail" xml:space="preserve">
+    <value>Probabilité de TV devant une tachycardie à QRS larges</value>
+  </data>
+</root>

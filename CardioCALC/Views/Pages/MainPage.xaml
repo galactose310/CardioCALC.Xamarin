@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:CardioCALC"
+    x:Class="CardioCALC.MainPage"
+	BarBackgroundColor="#f8f8fa">
+
+	<TabbedPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+	</TabbedPage.Padding>
+	
+	<TabbedPage.Effects>
+		<local:NoShiftEffect />
+	</TabbedPage.Effects>
+	
+	<NavigationPage Title="{Binding Resources[TabBarMenu]}" IconImageSource="{OnPlatform Android=outline_menu_24}">
+		<x:Arguments>
+			<local:ScoreListPage />
+		</x:Arguments>
+	</NavigationPage>
+
+	<NavigationPage Title="{Binding Resources[TabBarFavorites]}" IconImageSource="{OnPlatform Android=outline_favorite_border_24}">
+		<x:Arguments>
+			<local:FavoritesListPage Title="{Binding Resources[TabBarFavorites]}" />
+		</x:Arguments>
+	</NavigationPage>
+
+	<NavigationPage Title="{Binding Resources[TabBarConfig]}" IconImageSource="{OnPlatform Android=outline_settings_24}">
+		<x:Arguments>
+			<local:ConfigurationPage Title="{Binding Resources[TabBarConfig]}" />
+		</x:Arguments>
+	</NavigationPage>
+
+	<NavigationPage Title="{Binding Resources[TabBarAbout]}" IconImageSource="{OnPlatform Android=outline_info_24}">
+		<x:Arguments>
+			<local:PhhfGroupPage Title="{Binding Resources[TabBarAbout]}" />
+		</x:Arguments>
+	</NavigationPage>
+	
+</TabbedPage>
